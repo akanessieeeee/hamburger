@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ハンバーガーサイト</title>
+        <meta name="description" content="ハンバーガーサイトです。">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--ress.css-->
+        <link href="./css/ress.css" rel="stylesheet">
+        <!--Webフォントの読み込み-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--cssの読み込み-->
+        <link href="./css/style.css" rel="stylesheet">
+        <!--JavaScript-->
+        <script src="./js/main.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <meta httc-equiv="X-AU=Compatible" content="IE=edge">
+    </head>
+
+    <body class="l-container">
+        <header class="l-header">
+            <div class="p-header">
+                <h2 class="c-header__btn p-header__btn">Menu</h2>
+                <h1 class="c-header__title p-header__title">Hamburger</h1>
+                <div class="c-header__search p-header__search">
+                    <div class="c-header__search__box p-header__search__box--input">
+                        <img class="p-header__search__box__icon" src="./images/header_icon_serch.png" alt="検索のアイコン">
+                    </div>
+                    <div class="c-header__search__box p-header__search__box--submit">
+                        <p class="c-header__search__box__text p-header__search__box__text">検索</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="l-sidebar">
+            <div class="c-sidebar__bg p-sidebar__bg">
+                <div class="c-sidebar p-sidebar">
+                    <div class="c-sidebar__btn p-sidebar__btn">
+                        <div class="c-sidebar__btn__bar p-sidebar__btn__bar--first"></div>
+                        <div class="c-sidebar__btn__bar p-sidebar__btn__bar--second"></div>
+                    </div>    
+                    <h2 class="c-sidebar__title p-sidebar__title">Menu</h2>
+                    <div class="c-sidebar__container p-sidebar__container">
+                        <ul class="c-sidebar__container__unit p-sidebar__container__unit--first"><h3>バーガー</h3>
+                            <li class="c-sidebar__container__unit__list">ハンバーガー</li>
+                            <li class="c-sidebar__container__unit__list">チーズバーガー</li>
+                            <li class="c-sidebar__container__unit__list">テリヤキバーガー</li>
+                            <li class="c-sidebar__container__unit__list">アボカドバーガー</li>
+                            <li class="c-sidebar__container__unit__list">フィッシュバーガー</li>
+                            <li class="c-sidebar__container__unit__list">ベーコンバーガー</li>
+                            <li class="c-sidebar__container__unit__list">チキンバーガー</li>
+                        </ul>
+                        <ul class="c-sidebar__container__unit p-sidebar__container__unit--second"><h3>サイド</h3>
+                            <li class="c-sidebar__container__unit__list">ポテト</li>
+                            <li class="c-sidebar__container__unit__list">サラダ</li>
+                            <li class="c-sidebar__container__unit__list">ナゲット</li>
+                            <li class="c-sidebar__container__unit__list">コーン</li>
+                        </ul>
+                        <ul class="c-sidebar__container__unit p-sidebar__container__unit--third"><h3>ドリンク</h3>
+                            <li class="c-sidebar__container__unit__list">コーラ</li>
+                            <li class="c-sidebar__container__unit__list">ファンタ</li>
+                            <li class="c-sidebar__container__unit__list">オレンジ</li>
+                            <li class="c-sidebar__container__unit__list">アップル</li>
+                            <li class="c-sidebar__container__unit__list">紅茶(Ice/Hot)</li>
+                            <li class="c-sidebar__container__unit__list">コーヒー(Ice/Hot)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="l-main">
+            <div class="c-main p-main">
+                <div class="c-main__top p-main__top">
+                    <h2 class="c-main__top__title p-main__top__title">ダミーサイト</h2>
+                </div>
+                <div class="c-main__card p-main__card--first">
+                    <div>
+                        <h2 class="c-main__card__title">Take Out</h2>
+                        <div class="c-main__card__separate"></div>
+                    </div>
+                    <div>
+                        <div class="c-main__card__sabcard">
+                            <h3 class="c-main__card__sabcard__title">Take OUT</h3>
+                            <p class="c-main__card__sabcard__content">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
+                        </div>
+                        <div class="c-main__card__sabcard">
+                            <h3 class="c-main__card__sabcard__title">Take OUT</h3>
+                            <p class="c-main__card__sabcard__content">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-main__card p-main__card--second">
+                    <div>
+                        <h2 class="c-main__card__title">Eat In</h2>
+                        <div class="c-main__card__separate"></div>
+                    </div>
+                    <div>
+                        <div class="c-main__card__sabcard">
+                            <h3 class="c-main__card__sabcard__title">Eat In</h3>
+                            <p class="c-main__card__sabcard__content">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</p>
+                        </div>
+                        <div class="c-main__card__sabcard">
+                            <h3 class="c-main__card__sabcard__title">Eat In</h3>
+                            <p class="c-main__card__sabcard__content">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-main__map p-main__map">
+                    <div class="c-main__map__bg p-main__map__bg--light"></div>
+                    <div class="c-main__map__bg p-main__map__bg--dark"></div>
+                    <h2 class="c-main__map__title p-main__map__title">見出しが入ります</h2>
+                    <div class="c-main__map__separate p-main__map__separate"></div>
+                    <p class="c-main__map__content p-main__map__content">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+            </div>
+        </main>
+        <footer class="l-footer">
+            <div class="p-footer">
+                <div class="c-footer__container p-footer__container">
+                    <p class="c-footer__container__link p-footer__container__link--shop">ショップ情報</p>
+                    <div class="c-footer__container__separate p-footer__container__separate"></div>
+                    <p class="c-footer__container__link p-footer__container__link--history">ヒストリー</p>
+                </div>
+                <p class="c-footer__copyright p-footer__copyright">Copyright:RiseTech</p>
+            </div>
+        </footer>
+    </body>
+</html>

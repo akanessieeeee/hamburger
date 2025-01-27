@@ -1,0 +1,11 @@
+@use "../../foundation/foundation" as f;
+
+.c-main__top{
+    position: relative;
+
+    &__title{
+        position: absolute;
+        top: 122px;
+        left: 25px;
+    }
+}

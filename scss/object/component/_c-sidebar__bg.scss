@@ -1,0 +1,14 @@
+@use "../../foundation/foundation" as f;
+
+//close
+.c-sidebar__bg{
+    position: fixed;
+    top: 0;
+    right: -120%;
+    transition: right 0.6s;
+}
+
+//open
+.c-sidebar__bg.open{
+    right: 0;
+}

@@ -1,0 +1,14 @@
+@use "../../foundation/foundation" as f;
+
+
+.p-main__top{
+    width: 100%;
+    height: 285px;
+    background-image: url(../../../images/main_title_bg.jpg);
+    background-size: cover;
+
+    &__title{
+        color: f.$White;
+        font-size: 40px;
+    }
+}

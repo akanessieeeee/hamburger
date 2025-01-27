@@ -1,0 +1,132 @@
+//やり残したこと
+・cssの読み込み部分要編集
+→index.html 15行目
+
+
+//格子状にする(pc用)
+/*
+.l-container{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 50px;
+  grid-template-columns: 1fr 20%;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.l-hrader {
+  grid-row: 1;
+  grid-column: 1 / 3;
+}
+
+.l-sidebar{
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.l-main{
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.footer{
+  grid-row: 3;
+  grid-column: 1 / 3;
+}
+*/
+
+
+
+
+//タブレット用コーディング
+//btn--close
+.c-header__btn{
+  @include f.breakpoint(tablet) {
+      top: 20px;
+      right: 25px;
+  }
+}
+
+.c-main__card{
+  @include f.breakpoint(tablet) {
+      grid-row: 2;
+      grid-columns: 1 /3;
+  }
+}
+
+.c-main__map{
+  @include f.breakpoint(tablet) {
+      grid-row: 3;
+      grid-column:1 / 3;
+  }
+}
+
+.c-main__top{
+
+  @include f.breakpoint(tablet) {
+    grid-row: 1;
+    grid-column: 1 / 3;
+  }
+
+  &__title{
+    @include f.breakpoint(tablet) {
+        top: 122px;
+        left: 86px;
+    }
+  }
+}
+
+.c-main{
+  @include f.breakpoint(tablet) {
+      height: 100vh;
+      display: grid;
+      grid-template-rows: 285px 1fr 691px;
+      grid-template-columns: 1fr 50%;
+      box-sizing: border-box;
+  }
+}
+
+.p-header__btn{
+  @include f.breakpoint(tablet) {
+      font-size: 30px;
+  }
+}
+
+.p-header__search{
+  &__box--input{
+    @include f.breakpoint(tablet) {
+        width: 396px;
+    }
+  }
+
+  &__box--submit{
+    @include f.breakpoint(tablet) {
+        width: 136px;
+    }
+  }
+}
+
+.p-header__title{
+  @include f.breakpoint(tablet) {
+      padding-top: 40px;
+  }
+}
+
+.p-header{
+  @include f.breakpoint(tablet) {
+      height: 217px;
+  }
+}
+
+.c-main__card{
+  @include f.breakpoint(tablet) {
+      height: 681px;
+  }
+}
+
+.p-main__top{
+  @include f.breakpoint(tablet) {
+    background-position: center;
+  }
+}
+

@@ -1,0 +1,21 @@
+@use "../../foundation/foundation" as f;
+
+.c-main__map{
+    position: relative;
+
+    &__bg{
+        position: absolute;
+    }
+    
+    &__title{
+        position: relative;
+    }
+    
+    &__separate{
+        position: relative;
+    }
+    
+    &__content{
+        position: relative;
+    }
+}

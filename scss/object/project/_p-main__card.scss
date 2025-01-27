@@ -1,0 +1,48 @@
+@use "../../foundation/foundation" as f;
+
+.c-main__card{
+    margin: 20px;
+    height: 642px;
+    background-size: cover;
+    background-position: top center;
+
+    &__title{
+        color: f.$TextWhite;
+        font-size: 40px;
+        margin-top: 13px;
+        margin-left: 15px;
+    }
+    
+    &__separate{
+        height: 5px;
+        width: 35px;
+        margin-left: 16px;
+        background-color: f.$White;
+    }
+    
+    &__sabcard{
+        height: 156px;
+        background-color: f.$ClearWhite;
+        margin: 16px;
+        color: f.$TextDarkBrown;
+    
+        &__title{
+          font-size: 25px;
+          margin-top: 16px;
+          margin-left: 16px;
+        }
+    
+        &__content{
+          font-size: 17px;
+          margin-left: 16px;      
+        }
+    }
+}
+
+.p-main__card--first{
+    background-image: url(../../../images/main_card_1.jpg);
+}
+
+.p-main__card--second{
+    background-image: url(../../../images/main_card_2.jpg);
+}

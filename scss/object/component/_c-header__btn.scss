@@ -1,0 +1,14 @@
+@use "../../foundation/foundation" as f;
+
+//btn--close
+.c-header__btn{
+    position: fixed;
+    top: 0;
+    right: 8px;
+    z-index: 9999;
+}
+
+//btn--open
+.c-header__btn.open{
+    display: none;
+}

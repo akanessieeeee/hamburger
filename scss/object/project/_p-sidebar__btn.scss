@@ -1,0 +1,23 @@
+@use "../../foundation/foundation" as f;
+
+.c-sidebar__btn{
+    &__bar{
+        height: 40px;
+        width: 5px;
+        background-color: f.$TextGray;
+    }
+}
+
+.p-sidebar__btn{
+    height: 40px;
+    width: 30px;
+
+    &__bar{
+        &--first{
+          transform: rotate(45deg);
+        }
+        &--second{
+          transform: rotate(-45deg);
+        }
+    } 
+}

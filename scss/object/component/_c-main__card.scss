@@ -1,0 +1,7 @@
+@use "../../foundation/foundation" as f;
+
+.c-main__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,48 @@
+@use "../../foundation/foundation" as f;
+
+.p-main__map{
+    height: 691px;
+    background-image: url(../../../images/main_map.jpg);
+    background-size: cover;
+
+    .c-main__map__bg{
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: f.$ClearBlack;
+    }
+
+    &__bg--light{
+      height: 691px;
+    }
+    
+    &__bg--dark{
+      height: 415px;
+    }
+
+    &__title{
+      padding-top: 42px;
+      padding-left: 42px;
+      color: f.$White;
+      font-size: 30px;
+    }
+  
+    &__separate{
+      height: 2px;
+      width: 75px;
+      margin-top: 6px;
+      margin-left: 42px;
+      background-color: f.$White;
+    }
+  
+    &__content{
+      color: f.$White;
+      padding-top: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 14px;
+      font-weight: f.$bold;
+      line-height: 2.2;
+    }
+}

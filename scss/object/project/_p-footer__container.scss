@@ -1,0 +1,17 @@
+@use "../../foundation/foundation" as f;
+
+.c-footer__container__link{
+    color: f.$White;
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+.p-footer__container{
+
+    &__separate{
+        margin: 25px 10px 0 10px;
+        height: 20px;
+        width: 1.5px;
+        background-color: f.$White;
+    }
+}

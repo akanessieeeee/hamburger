@@ -1,0 +1,22 @@
+@use "../../foundation/foundation" as f;
+
+//close
+.c-sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+    &__btn{
+      position: absolute;
+      top: 8px;
+      right: 0;
+  
+      &__bar{
+        position: absolute;
+      }
+    }
+  
+    &__title{
+      display: none;
+    }
+}

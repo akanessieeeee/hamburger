@@ -1,0 +1,8 @@
+@use "../../foundation/foundation" as f;
+
+.c-footer__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    

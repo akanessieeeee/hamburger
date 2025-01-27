@@ -1,0 +1,34 @@
+@use "../../foundation/foundation" as f;
+
+.c-header__search{
+    &__box{
+        border-radius: 10px;    
+        border: solid 1px f.$TextGray;
+    }
+}
+
+.p-header__search{
+    padding-top: 30px;
+
+    &__box--input{
+        width: 216px;
+        height: 46px;
+        margin-right: 12px;
+        background-color: f.$White;
+    }
+
+    &__box__icon{
+        margin: 12px auto auto 5px;
+    }
+
+    &__box--submit{
+        width: 90px;
+        height: 46px;
+        background: linear-gradient(180deg,f.$DarkBeige,f.$Gray);
+    }
+
+    &__box__text{
+        margin-top: 12px;
+        font-weight: f.$bold;
+    }
+}
