@@ -14,30 +14,27 @@
     &__box--input{
         width: 216px;
         margin-right: 12px;
+        padding-left: 35px;
         background-color: f.$White;
+        background-image: url("../../../images/header_icon_serch.png");
+        background-position: 5px center;
 
         @include f.breakpoint(tablet) {
             width: 396px;
             margin-right: 14px;
+            padding-left: 42px;
+            background-position: 12px center;
         }
-    }
-
-    &__box__icon{
-        margin: 12px auto 12px 5px;
     }
 
     &__box--submit{
         width: 90px;
         background: linear-gradient(180deg,f.$DarkBeige,f.$Gray);
+        color: f.$TextGray;
+        font-weight: f.$bold;
 
         @include f.breakpoint(tablet) {
             width: 136px;
         }
-    }
-
-    &__box__text{
-        margin: auto;
-        line-height: 46px;
-        font-weight: f.$bold;
     }
 }
