@@ -4,6 +4,10 @@
     color: f.$White;
     margin-top: 16px;
     font-size: 20px;
+
+    @include f.breakpoint(tablet) {
+        margin-top: 30px;
+    }
 }
 
 .p-footer__container{
@@ -13,5 +17,9 @@
         height: 20px;
         width: 1.5px;
         background-color: f.$White;
+
+        @include f.breakpoint(tablet) {
+            margin-top: 38px;
+        }
     }
 }

@@ -6,11 +6,21 @@
     background-size: cover;
     background-position: top center;
 
+    @include f.breakpoint(tablet) {
+        margin: 40px;
+        height: 681px;
+    }
+
     &__title{
         color: f.$TextWhite;
         font-size: 40px;
         margin-top: 13px;
         margin-left: 15px;
+
+        @include f.breakpoint(tablet) {
+            margin-top: 14px;
+            margin-left: 11px;
+        }
     }
     
     &__separate{
@@ -18,6 +28,11 @@
         width: 35px;
         margin-left: 16px;
         background-color: f.$White;
+
+        @include f.breakpoint(tablet) {
+            margin-top: 10px;
+            margin-left: 11px;
+        }
     }
     
     &__sabcard{
@@ -25,6 +40,10 @@
         background-color: f.$ClearWhite;
         margin: 16px;
         color: f.$TextDarkBrown;
+
+        @include f.breakpoint(tablet) {
+            height: 154px;
+        }
     
         &__title{
           font-size: 25px;
@@ -34,15 +53,28 @@
     
         &__content{
           font-size: 17px;
-          margin-left: 16px;      
+          margin-left: 16px;
+          
+          @include f.breakpoint(tablet) {
+            margin: 16px;
+            line-height: 21px;
+          }
         }
     }
 }
 
 .p-main__card--first{
     background-image: url(../../../images/main_card_1.jpg);
+
+    @include f.breakpoint(tablet) {
+        margin-right: 20.5px;
+    }
 }
 
 .p-main__card--second{
     background-image: url(../../../images/main_card_2.jpg);
+
+    @include f.breakpoint(tablet) {
+        margin-left: 20.5px;
+    }
 }

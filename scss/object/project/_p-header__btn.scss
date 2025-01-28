@@ -2,4 +2,8 @@
 
 .p-header__btn{
     font-size: 22px;
+
+    @include f.breakpoint(tablet) {
+        font-size: 30px;
+    }
 }

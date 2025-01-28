@@ -1,20 +1,29 @@
 @use "../../foundation/foundation" as f;
 
+.c-main__map__bg{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: f.$ClearBlack;
+}
+
+
 .p-main__map{
     height: 691px;
     background-image: url(../../../images/main_map.jpg);
     background-size: cover;
 
-    .c-main__map__bg{
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: f.$ClearBlack;
+    @include f.breakpoint(tablet) {
+      height: 415px;
     }
 
     &__bg--light{
       height: 691px;
+
+      @include f.breakpoint(tablet) {
+        height: 415px;
+      }
     }
     
     &__bg--dark{
@@ -34,6 +43,10 @@
       margin-top: 6px;
       margin-left: 42px;
       background-color: f.$White;
+
+      @include f.breakpoint(tablet) {
+        margin-top: 15px;
+      }
     }
   
     &__content{
@@ -43,6 +56,12 @@
       padding-right: 40px;
       font-size: 14px;
       font-weight: f.$bold;
-      line-height: 2.2;
+      line-height: 28px;
+
+      @include f.breakpoint(tablet) {
+        line-height: 36px;
+        font-weight: f.$Lbold;
+        padding: 14px 29px 40px 42px;
+      }
     }
 }

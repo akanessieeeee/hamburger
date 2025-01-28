@@ -6,6 +6,11 @@
     top: 0;
     right: 8px;
     z-index: 9999;
+
+    @include f.breakpoint(tablet) {
+        top: 20px;
+        right: 25px;
+    }
 }
 
 //btn--open

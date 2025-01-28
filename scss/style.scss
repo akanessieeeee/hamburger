@@ -32,8 +32,11 @@
 //sidebar
 @use "./object/component/c-sidebar__bg";
 @use "./object/component/c-sidebar";
+@use "./object/component/c-sidebar__btn";
+@use "./object/component/c-sidebar__title";
 
 //footer
+@use "./object/component/c-footer";
 @use "./object/component/c-footer__container";
 
 
@@ -55,6 +58,7 @@
 @use "./object/project/p-sidebar__bg";
 @use "./object/project/p-sidebar";
 @use "./object/project/p-sidebar__btn";
+@use "./object/project/p-sidebar__title";
 @use "./object/project/p-sidebar__container";
 
 //footer

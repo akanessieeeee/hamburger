@@ -1,0 +1,16 @@
+@use "../../foundation/foundation" as f;
+
+.c-sidebar__btn{
+  position: absolute;
+  top: 8px;
+  right: 0;
+
+  @include f.breakpoint(tablet) {
+    top: 20px;
+    right: 25px;
+  }
+
+  &__bar{
+    position: absolute;
+  }
+}

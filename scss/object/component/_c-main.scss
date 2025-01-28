@@ -1,2 +1,11 @@
 @use "../../foundation/foundation" as f;
 
+.c-main{
+    @include f.breakpoint(tablet) {
+        height: 100%;
+        display: grid;
+        grid-template-rows: 285px 1fr 415px;
+        grid-template-columns: 1fr 50%;
+        box-sizing: border-box;
+    }
+}

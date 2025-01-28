@@ -4,4 +4,8 @@
     width: 281px;
     height: 100%;
     background-color: f.$Beige;
+
+    @include f.breakpoint(tablet) {
+        width: 367px;
+    }
 }

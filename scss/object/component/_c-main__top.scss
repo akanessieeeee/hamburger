@@ -3,9 +3,18 @@
 .c-main__top{
     position: relative;
 
+    @include f.breakpoint(tablet) {
+        grid-row: 1;
+        grid-column: 1 / 3;
+    }
+
     &__title{
         position: absolute;
         top: 122px;
         left: 25px;
+
+        @include f.breakpoint(tablet) {
+            left: 86px;
+        }
     }
 }

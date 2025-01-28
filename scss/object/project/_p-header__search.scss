@@ -2,6 +2,7 @@
 
 .c-header__search{
     &__box{
+        height: 46px;
         border-radius: 10px;    
         border: solid 1px f.$TextGray;
     }
@@ -12,23 +13,31 @@
 
     &__box--input{
         width: 216px;
-        height: 46px;
         margin-right: 12px;
         background-color: f.$White;
+
+        @include f.breakpoint(tablet) {
+            width: 396px;
+            margin-right: 14px;
+        }
     }
 
     &__box__icon{
-        margin: 12px auto auto 5px;
+        margin: 12px auto 12px 5px;
     }
 
     &__box--submit{
         width: 90px;
-        height: 46px;
         background: linear-gradient(180deg,f.$DarkBeige,f.$Gray);
+
+        @include f.breakpoint(tablet) {
+            width: 136px;
+        }
     }
 
     &__box__text{
-        margin-top: 12px;
+        margin: auto;
+        line-height: 46px;
         font-weight: f.$bold;
     }
 }

@@ -3,4 +3,8 @@
 .p-header{
     height: 215px;
     background-color: f.$Beige;
+
+    @include f.breakpoint(tablet) {
+        height: 217px;
+    }
 }

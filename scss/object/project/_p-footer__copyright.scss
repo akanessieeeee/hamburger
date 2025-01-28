@@ -5,4 +5,8 @@
     font-size: 16px;
     font-weight: f.$Lbold;
     margin-bottom: 16px;
+
+    @include f.breakpoint(tablet) {
+        margin-bottom: 24px;
+    }
 }
