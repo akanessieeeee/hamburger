@@ -1,3 +1,8 @@
 @use "../foundation/foundation" as f;
 
-
+.l-main{
+    @include f.breakpoint(pc) {
+        grid-row: 2;
+        grid-column: 1 / 2;
+    }
+}

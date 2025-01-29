@@ -1,5 +1,10 @@
 @use "../foundation/foundation" as f;
 
 .l-container{
-    position: relative;
+    @include f.breakpoint(pc) {
+        display: grid;
+        grid-template-rows: 7% 1fr 5%;
+        grid-template-columns: 1fr 20vw;
+        box-sizing: border-box;
+    }
 }

@@ -1,3 +1,8 @@
 @use "../foundation/foundation" as f;
 
-
+.l-footer{
+    @include f.breakpoint(pc) {
+        grid-row: 3;
+        grid-column: 1 / 3;
+    }
+}
