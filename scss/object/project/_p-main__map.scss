@@ -10,58 +10,87 @@
 
 
 .p-main__map{
+  height: 691px;
+  background-image: url(../../../images/main_map.jpg);
+  background-size: cover;
+
+  @include f.breakpoint(tablet) {
+    height: 415px;
+
+    @include f.breakpoint(pc) {
+      height: 649px;
+    }
+  }
+
+  &__bg--light{
     height: 691px;
-    background-image: url(../../../images/main_map.jpg);
-    background-size: cover;
 
     @include f.breakpoint(tablet) {
       height: 415px;
-    }
 
-    &__bg--light{
-      height: 691px;
-
-      @include f.breakpoint(tablet) {
-        height: 415px;
+      @include f.breakpoint(pc) {
+        height: 649px;
       }
     }
-    
-    &__bg--dark{
-      height: 415px;
-    }
-
-    &__title{
-      padding-top: 42px;
-      padding-left: 42px;
-      color: f.$White;
-      font-size: 30px;
-    }
+  }
   
-    &__separate{
-      height: 2px;
-      width: 75px;
-      margin-top: 6px;
-      margin-left: 42px;
-      background-color: f.$White;
+  &__bg--dark{
+    height: 415px;
 
-      @include f.breakpoint(tablet) {
-        margin-top: 15px;
+    @include f.breakpoint(pc) {
+      height: 649px;
+      width: 61%;
+    }
+  }
+
+  &__title{
+    padding-top: 42px;
+    padding-left: 42px;
+    color: f.$White;
+    font-size: 30px;
+
+    @include f.breakpoint(pc) {
+      padding-top: 86px;
+      padding-left: 119px;
+    }
+  }
+
+  &__separate{
+    height: 2px;
+    width: 75px;
+    margin-top: 6px;
+    margin-left: 42px;
+    background-color: f.$White;
+
+    @include f.breakpoint(tablet) {
+      margin-top: 15px;
+
+      @include f.breakpoint(pc) {
+        margin-top: 50.0px;
+        margin-left: 119.5px;
       }
     }
-  
-    &__content{
-      color: f.$White;
-      padding-top: 20px;
-      padding-left: 40px;
-      padding-right: 40px;
-      font-size: 14px;
-      font-weight: f.$bold;
-      line-height: 28px;
+  }
 
-      @include f.breakpoint(tablet) {
-        line-height: 36px;
-        font-weight: f.$Lbold;
-        padding: 14px 29px 40px 42px;
+  &__content{
+    color: f.$White;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 14px;
+    font-weight: f.$bold;
+    line-height: 28px;
+
+    @include f.breakpoint(tablet) {
+      line-height: 36px;
+      font-weight: f.$Lbold;
+      padding: 14px 29px 40px 42px;
+
+      @include f.breakpoint(pc) {
+        width: 61%;
+        padding-top: 58.5px;
+        padding-left: 119px;
       }
     }
+  }
 }

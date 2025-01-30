@@ -7,5 +7,10 @@
 
     @include f.breakpoint(tablet) {
         padding-top: 40px;
+
+        @include f.breakpoint(pc) {
+            padding: 0 0 0 4%;
+            font-size: 60px;
+        }
     }
 }

@@ -2,4 +2,8 @@
 
 .c-sidebar__title{
     display: none;
+
+    @include f.breakpoint(pc) {
+        display: block;
+    }
 }

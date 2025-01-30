@@ -1,0 +1,9 @@
+@use "../../foundation/foundation" as f;
+
+.c-header{
+    @include f.breakpoint(pc) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -7,6 +7,10 @@
 
     @include f.breakpoint(tablet) {
         margin-top: 30px;
+
+        @include f.breakpoint(pc) {
+            margin-top: 41px;
+        }
     }
 }
 
@@ -20,6 +24,10 @@
 
         @include f.breakpoint(tablet) {
             margin-top: 38px;
+
+            @include f.breakpoint(pc) {
+                margin-top: 49px;
+            }
         }
     }
 }

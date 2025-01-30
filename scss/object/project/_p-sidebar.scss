@@ -3,9 +3,13 @@
 .p-sidebar{
     width: 281px;
     height: 100%;
-    background-color: f.$Beige;
+    background-color: f.$DarkBeige;
 
     @include f.breakpoint(tablet) {
         width: 367px;
+
+        @include f.breakpoint(pc) {
+            width: 100%;
+        }
     }
 }

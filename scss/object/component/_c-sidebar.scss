@@ -4,4 +4,8 @@
   position: absolute;
   top: 0;
   right: 0;
+
+  @include f.breakpoint(pc) {
+    position: static;
+  }
 }

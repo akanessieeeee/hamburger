@@ -7,6 +7,10 @@
 
   @include f.breakpoint(tablet) {
     margin-top: 48px;
+
+    @include f.breakpoint(pc) {
+      margin-left: 12.5%;
+    }
   }
 
   &__list{
@@ -14,6 +18,19 @@
     margin-left: 20px;
 
     @include f.breakpoint(tablet) {
+      margin-top: 32px;
+
+      @include f.breakpoint(pc) {
+        font-size: 17px;
+        margin-top: 10px;
+        margin-left: 7%;
+      }
+
+    }
+  }
+
+  &__list:first-of-type{
+    @include f.breakpoint(pc) {
       margin-top: 32px;
     }
   }
@@ -30,5 +47,10 @@
   @include f.breakpoint(tablet) {
     padding-top: 130px;
     padding-bottom: 558px;
+
+    @include f.breakpoint(pc) {
+      padding-top: 42px;
+      padding-bottom: 0;
+    }
   }
 }

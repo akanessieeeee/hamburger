@@ -9,6 +9,10 @@
 
     @include f.breakpoint(tablet) {
         background-position: center;
+
+        @include f.breakpoint(pc) {
+            height: 530px;
+        }
     }
 
     &__title{

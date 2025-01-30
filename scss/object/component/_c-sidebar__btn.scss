@@ -8,6 +8,10 @@
   @include f.breakpoint(tablet) {
     top: 20px;
     right: 25px;
+
+    @include f.breakpoint(pc) {
+      display: none;
+    }
   }
 
   &__bar{

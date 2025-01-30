@@ -1,2 +1,10 @@
 @use "../../foundation/foundation" as f;
 
+//pc用デザインのみ表示
+.p-sidebar__title{
+    @include f.breakpoint(pc) {
+        font-size: 30px;
+        padding-top: 84px;
+        padding-left: 12.5%;
+    }
+}

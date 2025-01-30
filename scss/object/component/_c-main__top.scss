@@ -15,6 +15,10 @@
 
         @include f.breakpoint(tablet) {
             left: 86px;
+
+            @include f.breakpoint(pc) {
+                top: 234px;
+            }
         }
     }
 }

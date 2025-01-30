@@ -8,5 +8,9 @@
 
     @include f.breakpoint(tablet) {
         margin-bottom: 24px;
+
+        @include f.breakpoint(pc) {
+            margin-bottom: 27px;
+        }
     }
 }

@@ -11,6 +11,14 @@
 .p-header__search{
     padding-top: 30px;
 
+    @include f.breakpoint(pc) {
+        width: 35%;
+    }
+
+    @include f.breakpoint(pc) {
+        padding: 0 2% 0 0;
+    }
+
     &__box--input{
         width: 216px;
         margin-right: 12px;
@@ -24,6 +32,10 @@
             margin-right: 14px;
             padding-left: 42px;
             background-position: 12px center;
+
+            @include f.breakpoint(pc) {
+                width: 72.5%;
+            }
         }
     }
 
@@ -35,6 +47,10 @@
 
         @include f.breakpoint(tablet) {
             width: 136px;
+
+            @include f.breakpoint(pc) {
+                width: 25%;
+            }
         }
     }
 }

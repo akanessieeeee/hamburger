@@ -19,6 +19,7 @@
 
 /*component-----------------------------------------*/
 //header
+@use "./object/component/c-header";
 @use "./object/component/c-header__btn";
 @use "./object/component/c-header__title";
 @use "./object/component/c-header__search";

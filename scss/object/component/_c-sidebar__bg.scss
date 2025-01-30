@@ -6,6 +6,10 @@
     top: 0;
     right: -120%;
     transition: right 0.6s;
+
+    @include f.breakpoint(pc) {
+        position: static;
+    }
 }
 
 //open

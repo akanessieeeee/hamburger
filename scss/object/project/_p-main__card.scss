@@ -9,6 +9,12 @@
     @include f.breakpoint(tablet) {
         margin: 40px;
         height: 681px;
+
+        @include f.breakpoint(pc) {
+            height: 1197px;
+            width: 80%;
+            margin: 19% auto 21% auto;
+        }
     }
 
     &__title{
@@ -20,6 +26,12 @@
         @include f.breakpoint(tablet) {
             margin-top: 14px;
             margin-left: 11px;
+
+            @include f.breakpoint(pc) {
+                font-size: 65px;
+                margin-top: 28px;
+                margin-left: 14px;
+            }
         }
     }
     
@@ -32,6 +44,12 @@
         @include f.breakpoint(tablet) {
             margin-top: 10px;
             margin-left: 11px;
+
+            @include f.breakpoint(pc) {
+                margin-top: 20px;
+                margin-left: 17.5px;
+                width: 63px;
+            }
         }
     }
     
@@ -43,6 +61,10 @@
 
         @include f.breakpoint(tablet) {
             height: 154px;
+
+            @include f.breakpoint(pc) {
+                height: 161px;
+            }
         }
     
         &__title{
@@ -68,6 +90,10 @@
 
     @include f.breakpoint(tablet) {
         margin-right: 20.5px;
+
+        @include f.breakpoint(pc) {
+            margin-right: 6.5%;
+        }
     }
 }
 
@@ -76,5 +102,9 @@
 
     @include f.breakpoint(tablet) {
         margin-left: 20.5px;
+
+        @include f.breakpoint(pc) {
+            margin-left: 6.5%;
+        }
     }
 }
