@@ -214,8 +214,7 @@ a {
 .c-sidebar__bg {
   position: fixed;
   top: 0;
-  right: -120%;
-  transition: right 0.6s;
+  left: 0;
 }
 @media (min-width: 920px) {
   .c-sidebar__bg {
@@ -223,19 +222,20 @@ a {
   }
 }
 
-.c-sidebar__bg.open {
-  right: 0;
-}
-
 .c-sidebar {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -120%;
+  transition: right 0.6s;
 }
 @media (min-width: 920px) {
   .c-sidebar {
     position: static;
   }
+}
+
+.c-sidebar.open {
+  right: 0;
 }
 
 .c-sidebar__btn {
@@ -614,6 +614,13 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.6s ease;
+}
+
+.p-sidebar__bg.open {
+  opacity: 1;
   z-index: 100;
 }
 

@@ -1,8 +1,15 @@
 @use "../../foundation/foundation" as f;
 
+//close
 .p-sidebar__bg{
     width: 100%;
     height: 100%;
     background-color: f.$ClearBlackDark;
-    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+//open
+.p-sidebar__bg.open{
+    opacity: 1;
 }

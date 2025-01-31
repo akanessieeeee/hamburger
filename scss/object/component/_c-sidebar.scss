@@ -1,11 +1,19 @@
 @use "../../foundation/foundation" as f;
 
+//close
 .c-sidebar{
   position: absolute;
   top: 0;
-  right: 0;
+  right: -120%;
+  transition: right 0.6s;
 
   @include f.breakpoint(pc) {
     position: static;
   }
+}
+
+
+//open
+.c-sidebar.open{
+  right: 0;
 }
