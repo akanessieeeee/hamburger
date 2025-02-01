@@ -2,6 +2,7 @@
 
 //close
 .l-sidebar{
+    position: relative;
     z-index: -1;
 
     @include f.breakpoint(pc) {
@@ -12,5 +13,5 @@
 
 //open
 .l-sidebar.open{
-    z-index: 100;
+    z-index: 999;
 }

@@ -2,8 +2,9 @@
 //open
 $('.c-header__btn').on('click',function(){
     //sidebarを開く
-    $('.p-sidebar__bg').addClass('open');
     $('.c-sidebar').addClass('open');
+    //背景フェードイン
+    $('.p-sidebar__bg').addClass('open');
     $('.l-sidebar').addClass('open');
     //btnの削除
     $(this).addClass('open');
@@ -12,12 +13,15 @@ $('.c-header__btn').on('click',function(){
 //close
 $('.c-sidebar__btn').on('click',function(){
     //sidebarを閉じる
-    $('.p-sidebar__bg').removeClass('open');
     $('.c-sidebar').removeClass('open');
+    //背景フェードアウト
+    $('.p-sidebar__bg').removeClass('open');
+    function fadeout(){
+        $('.l-sidebar').removeClass('open');
+    };
+    setTimeout(fadeout,600);
+
     //btn
     $('.c-header__btn').removeClass('open');
 });
 
-setTimeout(function(){
-    $('.l-sidebar').removeClass('open');
-});
