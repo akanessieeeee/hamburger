@@ -1,9 +1,0 @@
-@use "../../foundation/foundation" as f;
-
-.c-sidebar__title{
-    display: none;
-
-    @include f.breakpoint(pc) {
-        display: block;
-    }
-}

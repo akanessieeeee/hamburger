@@ -1,0 +1,26 @@
+@use "../../foundation/foundation" as f;
+
+.c-unit__list:first-of-type{
+  @include f.breakpoint(pc) {
+    margin-top: 32px;
+  }
+}
+
+.p-sidebar__container{
+  width: 100%;
+  height: 100%;
+  padding-top: 118px;
+  padding-bottom: 1400px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  @include f.breakpoint(tablet) {
+    padding-top: 130px;
+    padding-bottom: 558px;
+
+    @include f.breakpoint(pc) {
+      padding-top: 42px;
+      padding-bottom: 0;
+    }
+  }
+}

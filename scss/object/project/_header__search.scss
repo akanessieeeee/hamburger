@@ -1,14 +1,12 @@
 @use "../../foundation/foundation" as f;
 
-.c-header__search{
-    &__box{
-        height: 46px;
-        border-radius: 10px;    
-        border: solid 1px f.$TextGray;
-    }
+.c-box{
+    height: 46px;
 }
 
 .p-header__search{
+    display: flex;
+    justify-content: center;
     padding-top: 30px;
 
     @include f.breakpoint(pc) {
@@ -23,7 +21,6 @@
         width: 216px;
         margin-right: 12px;
         padding-left: 35px;
-        background-color: f.$White;
         background-image: url("../../../images/header_icon_serch.png");
         background-position: 5px center;
 

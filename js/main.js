@@ -1,8 +1,8 @@
 //sidebar
 //open
-$('.c-header__btn').on('click',function(){
+$('.p-header__btn').on('click',function(){
     //sidebarを開く
-    $('.c-sidebar').addClass('open');
+    $('.p-sidebar').addClass('open');
     //背景フェードイン
     $('.p-sidebar__bg').addClass('open');
     $('.l-sidebar').addClass('open');
@@ -11,9 +11,9 @@ $('.c-header__btn').on('click',function(){
 });
 
 //close
-$('.c-sidebar__btn').on('click',function(){
+$('.p-sidebar__btn').on('click',function(){
     //sidebarを閉じる
-    $('.c-sidebar').removeClass('open');
+    $('.p-sidebar').removeClass('open');
     //背景フェードアウト
     $('.p-sidebar__bg').removeClass('open');
     function fadeout(){
@@ -22,6 +22,6 @@ $('.c-sidebar__btn').on('click',function(){
     setTimeout(fadeout,600);
 
     //btn
-    $('.c-header__btn').removeClass('open');
+    $('.p-header__btn').removeClass('open');
 });
 

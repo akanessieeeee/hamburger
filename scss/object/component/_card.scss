@@ -1,8 +1,7 @@
 @use "../../foundation/foundation" as f;
 
-.c-footer__container{
+.c-card{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-direction: column;
 }
-    

@@ -16,53 +16,42 @@
 
 /*Object
 ====================================================*/
-
 /*component-----------------------------------------*/
-//header
-@use "./object/component/c-header";
-@use "./object/component/c-header__btn";
-@use "./object/component/c-header__title";
-@use "./object/component/c-header__search";
-
-//mian
-@use "./object/component/c-main";
-@use "./object/component/c-main__top";
-@use "./object/component/c-main__card";
-@use "./object/component/c-main__map";
-
-//sidebar
-@use "./object/component/c-sidebar__bg";
-@use "./object/component/c-sidebar";
-@use "./object/component/c-sidebar__btn";
-@use "./object/component/c-sidebar__title";
-
-//footer
-@use "./object/component/c-footer";
-@use "./object/component/c-footer__container";
-
+@use "./object/component/box";
+@use "./object/component/btn__bar";
+@use "./object/component/bg--clearblack";
+@use "./object/component/bg--img";
+@use "./object/component/bg--white";
+@use "./object/component/card";
+@use "./object/component/card__sabcard";
+@use "./object/component/text--white";
+@use "./object/component/unit";
+@use "./object/component/unit__list";
 
 
 /*project-------------------------------------------*/
 //header
 @use "./object/project/p-header";
-@use "./object/project/p-header__btn";
-@use "./object/project/p-header__title";
-@use "./object/project/p-header__search";
+@use "./object/project/header__btn";
+@use "./object/project/header__title";
+@use "./object/project/header__search";
 
-//mian
+//main
 @use "./object/project/p-main";
-@use "./object/project/p-main__top";
-@use "./object/project/p-main__card";
-@use "./object/project/p-main__map";
+@use "./object/project/main__top";
+@use "./object/project/main__card";
+@use "./object/project/main__map";
 
 //sidebar
-@use "./object/project/p-sidebar__bg";
+@use "./object/project/sidebar__bg";
 @use "./object/project/p-sidebar";
-@use "./object/project/p-sidebar__btn";
-@use "./object/project/p-sidebar__title";
-@use "./object/project/p-sidebar__container";
+@use "./object/project/sidebar__btn";
+@use "./object/project/sidebar__title";
+@use "./object/project/sidebar__container";
 
 //footer
 @use "./object/project/p-footer";
-@use "./object/project/p-footer__container";
-@use "./object/project/p-footer__copyright";
+@use "./object/project/footer__container";
+@use "./object/project/footer__copyright";
+
+

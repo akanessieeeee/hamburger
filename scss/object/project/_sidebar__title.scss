@@ -2,7 +2,10 @@
 
 //pc用デザインのみ表示
 .p-sidebar__title{
+    display: none;
+
     @include f.breakpoint(pc) {
+        display: block;
         font-size: 30px;
         padding-top: 84px;
         padding-left: 12.5%;

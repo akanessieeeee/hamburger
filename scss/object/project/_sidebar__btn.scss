@@ -1,17 +1,20 @@
 @use "../../foundation/foundation" as f;
 
-//pc用デザインでは非表示
-.c-sidebar__btn{
-  &__bar{
-    height: 40px;
-    width: 5px;
-    background-color: f.$TextGray;
-  }
-}
-
 .p-sidebar__btn{
   height: 40px;
   width: 30px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+
+  @include f.breakpoint(tablet) {
+    top: 20px;
+    right: 25px;
+
+    @include f.breakpoint(pc) {
+      display: none;
+    }
+  }
 
   &__bar{
     &--first{

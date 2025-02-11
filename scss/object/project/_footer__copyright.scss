@@ -1,11 +1,13 @@
 @use "../../foundation/foundation" as f;
 
 .p-footer__copyright{
-    color: f.$White;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 16px;
     font-weight: f.$Lbold;
     margin-bottom: 16px;
-
+    
     @include f.breakpoint(tablet) {
         margin-bottom: 24px;
 

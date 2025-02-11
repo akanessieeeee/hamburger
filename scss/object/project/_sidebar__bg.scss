@@ -7,6 +7,14 @@
     background-color: f.$ClearBlackDark;
     opacity: 0;
     transition: opacity 0.6s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    @include f.breakpoint(pc) {
+        position: static;
+        opacity: 1;
+    }
 }
 
 //open

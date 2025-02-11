@@ -1,0 +1,8 @@
+@use "../../foundation/foundation" as f;
+
+.c-btn__bar{
+    position: absolute;
+    height: 40px;
+    width: 5px;
+    background-color: f.$TextGray;
+}

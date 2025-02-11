@@ -1,11 +1,11 @@
 @use "../../foundation/foundation" as f;
 
-.c-main__map__bg{
+.c-bg--clearblack{
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: f.$ClearBlack;
 }
 
 
@@ -13,9 +13,12 @@
   height: 691px;
   background-image: url(../../../images/main_map.jpg);
   background-size: cover;
+  position: relative;
 
   @include f.breakpoint(tablet) {
     height: 415px;
+    grid-row: 3;
+    grid-column:1 / 3;
 
     @include f.breakpoint(pc) {
       height: 649px;
@@ -48,6 +51,7 @@
     padding-left: 42px;
     color: f.$White;
     font-size: 30px;
+    position: relative;
 
     @include f.breakpoint(pc) {
       padding-top: 86px;
@@ -61,6 +65,7 @@
     margin-top: 6px;
     margin-left: 42px;
     background-color: f.$White;
+    position: relative;
 
     @include f.breakpoint(tablet) {
       margin-top: 15px;
@@ -80,6 +85,7 @@
     font-size: 14px;
     font-weight: f.$bold;
     line-height: 28px;
+    position: relative;
 
     @include f.breakpoint(tablet) {
       line-height: 36px;

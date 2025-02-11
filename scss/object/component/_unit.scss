@@ -1,0 +1,15 @@
+@use "../../foundation/foundation" as f;
+
+.c-unit{
+  font-size: 20px;
+  margin-top: 60px;
+  margin-left: 46px;
+
+  @include f.breakpoint(tablet) {
+    margin-top: 48px;
+
+    @include f.breakpoint(pc) {
+      margin-left: 12.5%;
+    }
+  }
+}
