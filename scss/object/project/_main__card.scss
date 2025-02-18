@@ -1,24 +1,27 @@
 @use "../../foundation/foundation" as f;
 
+.p-main__card__wrapper{
+    
+    @include f.breakpoint(tablet) {
+        display: flex;
+    }
+}
+
 .p-main__card{
     margin: 20px;
-    height: 642px;
+    padding-bottom: 16px;
+    height: auto;
 
     @include f.breakpoint(tablet) {
+        width: 50%;
         margin: 40px;
-        height: 681px;
-        grid-row: 2;
-        grid-columns: 1 / 3;
 
         @include f.breakpoint(pc) {
-            height: 1197px;
-            width: 80%;
-            margin: 19% auto 21% auto;
+            margin: 7.7% 7.7% 8.4% 7.7%;
         }
     }
 
     &__title{
-        color: f.$TextWhite;
         font-size: 40px;
         margin-top: 13px;
         margin-left: 15px;
@@ -35,11 +38,14 @@
         }
     }
 
+    &__title:first-of-type{
+        color: f.$TextWhite;
+    }
+
     &__separate{
         height: 5px;
         width: 35px;
         margin-left: 16px;
-        background-color: f.$White;
     
         @include f.breakpoint(tablet) {
             margin-top: 10px;
@@ -54,18 +60,10 @@
     }
 
     &__sabcard{
-        height: 156px;
-        background-color: f.$ClearWhite;
-        margin: 16px;
+        height: auto;
+        opacity: 0.8;
+        margin: 16px 16px 0 16px;
         color: f.$TextDarkBrown;
-    
-        @include f.breakpoint(tablet) {
-            height: 154px;
-    
-            @include f.breakpoint(pc) {
-                height: 161px;
-            }
-        }
     
         &__title{
           font-size: 25px;
@@ -75,12 +73,23 @@
     
         &__content{
           font-size: 17px;
-          margin-left: 16px;
+          padding: 16px;
           
           @include f.breakpoint(tablet) {
-            margin: 16px;
             line-height: 21px;
           }
+        }
+    }
+
+    &__sabcard:first-of-type{
+        margin-top: 218px;
+
+        @include f.breakpoint(tablet) {
+            margin-top: 305px;
+
+            @include f.breakpoint(pc) {
+                margin-top: 682px;
+            }
         }
     }
 
@@ -91,7 +100,7 @@
             margin-right: 20.5px;
     
             @include f.breakpoint(pc) {
-                margin-right: 6.5%;
+                margin-right: 2.6%;
             }
         }
     }
@@ -103,7 +112,7 @@
             margin-left: 20.5px;
     
             @include f.breakpoint(pc) {
-                margin-left: 6.5%;
+                margin-left: 2.6%;
             }
         }
     }

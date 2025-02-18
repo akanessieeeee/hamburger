@@ -22,8 +22,6 @@
 @use "./object/component/bg--clearblack";
 @use "./object/component/bg--img";
 @use "./object/component/bg--white";
-@use "./object/component/card";
-@use "./object/component/card__sabcard";
 @use "./object/component/text--white";
 @use "./object/component/unit";
 @use "./object/component/unit__list";
@@ -37,7 +35,6 @@
 @use "./object/project/header__search";
 
 //main
-@use "./object/project/p-main";
 @use "./object/project/main__top";
 @use "./object/project/main__card";
 @use "./object/project/main__map";

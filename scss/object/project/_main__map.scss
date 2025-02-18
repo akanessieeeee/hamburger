@@ -10,29 +10,26 @@
 
 
 .p-main__map{
-  height: 691px;
+  min-height: 691px;
   background-image: url(../../../images/main_map.jpg);
-  background-size: cover;
   position: relative;
 
   @include f.breakpoint(tablet) {
-    height: 415px;
-    grid-row: 3;
-    grid-column:1 / 3;
+    min-height: 415px;
 
     @include f.breakpoint(pc) {
-      height: 649px;
+      min-height: 649px;
     }
   }
 
   &__bg--light{
-    height: 691px;
+    min-height: 691px;
 
     @include f.breakpoint(tablet) {
-      height: 415px;
+      min-height: 415px;
 
       @include f.breakpoint(pc) {
-        height: 649px;
+        min-height: 649px;
       }
     }
   }
@@ -40,16 +37,18 @@
   &__bg--dark{
     height: 415px;
 
-    @include f.breakpoint(pc) {
-      height: 649px;
-      width: 61%;
+    @include f.breakpoint(tablet) {
+      height: auto;
+
+      @include f.breakpoint(pc) {
+        width: 61%;
+      }
     }
   }
 
   &__title{
     padding-top: 42px;
     padding-left: 42px;
-    color: f.$White;
     font-size: 30px;
     position: relative;
 
@@ -64,7 +63,6 @@
     width: 75px;
     margin-top: 6px;
     margin-left: 42px;
-    background-color: f.$White;
     position: relative;
 
     @include f.breakpoint(tablet) {
@@ -78,7 +76,6 @@
   }
 
   &__content{
-    color: f.$White;
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
