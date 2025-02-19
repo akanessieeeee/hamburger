@@ -1,5 +1,6 @@
 @use "../foundation/foundation" as f;
 
+//close
 .l-container{
     @include f.breakpoint(pc) {
         display: grid;
@@ -7,4 +8,9 @@
         grid-template-columns: 1fr 20%;
         box-sizing: border-box;
     }
+}
+
+//open
+.l-container.open{
+    overflow: hidden;
 }

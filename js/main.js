@@ -8,6 +8,8 @@ $('.p-header__btn').on('click',function(){
     $('.l-sidebar').addClass('open');
     //btnの削除
     $(this).addClass('open');
+    //背景の固定
+    $('.l-container').addClass('open');
 });
 
 //close
@@ -20,8 +22,9 @@ $('.p-sidebar__btn').on('click',function(){
         $('.l-sidebar').removeClass('open');
     };
     setTimeout(fadeout,600);
-
-    //btn
+    //btnの表示
     $('.p-header__btn').removeClass('open');
+    //背景の固定解除
+    $('.l-container').removeClass('open');
 });
 

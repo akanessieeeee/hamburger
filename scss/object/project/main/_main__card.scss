@@ -1,4 +1,4 @@
-@use "../../foundation/foundation" as f;
+@use "../../../foundation/foundation" as f;
 
 .p-main__card__wrapper{
     
@@ -10,14 +10,19 @@
 .p-main__card{
     margin: 20px;
     padding-bottom: 16px;
-    height: auto;
+    min-height: 643px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @include f.breakpoint(tablet) {
         width: 50%;
         margin: 40px;
+        min-height: 681px;
 
         @include f.breakpoint(pc) {
             margin: 7.7% 7.7% 8.4% 7.7%;
+            min-height: 1197px;
         }
     }
 

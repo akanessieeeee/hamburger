@@ -1,10 +1,10 @@
-@use "../../foundation/foundation" as f;
+@use "../../../foundation/foundation" as f;
 
 
 //btn--close
 .p-header__btn{
     font-size: 22px;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 8px;
     z-index: 9999;
