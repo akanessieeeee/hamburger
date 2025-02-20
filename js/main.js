@@ -28,3 +28,18 @@ $('.p-sidebar__btn').on('click',function(){
     $('.l-container').removeClass('open');
 });
 
+//ウィンドウ幅変更時にページをリロード
+let timer = false;
+let prewidth = $(window).width()
+$(window).resize(function(){
+    if (timer !== false) {
+        clearTimeout(timer);
+    };
+    timer =setTimeout(function() {
+        let nowWidth = $(window).width()
+        if(prewidth !== nowWidth) {
+            location.reload();
+        }
+        prewidth = nowWidth;
+    },200);
+});

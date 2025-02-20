@@ -6,6 +6,7 @@
   position: absolute;
   top: 8px;
   right: 0;
+  cursor: pointer;
 
   @include f.breakpoint(tablet) {
     top: 20px;

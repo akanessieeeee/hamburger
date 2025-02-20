@@ -191,6 +191,7 @@ a {
   top: 0;
   right: 8px;
   z-index: 9999;
+  cursor: pointer;
 }
 @media (min-width: 520px) {
   .p-header__btn {
@@ -608,6 +609,7 @@ a {
   position: absolute;
   top: 8px;
   right: 0;
+  cursor: pointer;
 }
 @media (min-width: 520px) {
   .p-sidebar__btn {
