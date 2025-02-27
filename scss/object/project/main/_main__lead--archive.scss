@@ -1,0 +1,27 @@
+@use "../../../foundation/foundation" as f;
+
+.p-main__lead__title--archive{
+    margin: 32px 18px 0 22px;
+    font-size: 25px;
+
+    @include f.breakpoint(tablet) {
+        margin: 39px 35px 0 42px;
+        font-size: 35px;
+
+        @include f.breakpoint(pc) {
+            margin: 63px 6.4% 0 6.4%;
+        }
+    }
+}
+
+.p-main__lead__text--archive{
+    margin: 25px 18px 19px 22px;
+
+    @include f.breakpoint(tablet) {
+        margin: 20px 35px 37px 42px;
+
+        @include f.breakpoint(pc) {
+            margin:20px 6.4% 70px 6.4% ;
+        }
+    }
+}

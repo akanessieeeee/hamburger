@@ -1,0 +1,158 @@
+@use "../../../foundation/foundation" as f;
+
+.p-main__pagenation{
+	&--archive{
+		margin: 72px 20px 30px 20px;
+		font-size: 20px;
+
+		@include f.breakpoint(tablet) {
+			display: flex;
+			justify-content: center;
+			margin: 106.5px auto 32px auto;
+
+			@include f.breakpoint(pc) {
+				margin: 150px auto 64px auto;
+			}
+		}
+	}
+
+	//page
+	&__page--archive{
+		display: none;
+
+		@include f.breakpoint(tablet) {
+			display: block;
+			margin-right: 29px;
+		}
+	}
+
+	//rink
+	&__rink--archive{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	//前へ
+	&__rink__prev--archive{
+		position: relative;
+		padding-left: 25px;
+		cursor: pointer;
+	}
+
+	&__rink__prev--archive::before{
+		content: "";
+		display: inline-block;
+		height: 15px;
+		width: 15px;
+		border-top: 1.5px solid f.$TextGray;
+		border-left: 1.5px solid f.$TextGray;
+		transform: rotate(-45deg);
+		position: absolute;
+		top: 10px;
+		left: 10px;
+
+		@include f.breakpoint(tablet) {
+			left: 1px;
+		}
+	}
+
+	&__rink__prev--archive::after{
+		content: "";
+		display: inline-block;
+		height: 15px;
+		width: 15px;
+		border-top: 1.5px solid f.$TextGray;
+		border-left: 1.5px solid f.$TextGray;
+		transform: rotate(-45deg);
+		position: absolute;
+		top: 10px;
+		left: 0;
+
+		@include f.breakpoint(tablet) {
+			left: -9px;
+		}
+	}
+
+	&__rink__prev__text--archive{
+		@include f.breakpoint(tablet) {
+			display: none;
+		}
+	}
+
+
+	//次へ
+	&__rink__next--archive{
+		position: relative;
+		padding-right: 25px;
+		cursor: pointer;
+	}
+	
+	&__rink__next--archive::before{
+		content: "";
+		display: inline-block;
+		height: 15px;
+		width: 15px;
+		border-top: 1.5px solid f.$TextGray;
+		border-right: 1.5px solid f.$TextGray;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 10px;
+		right: 10px;
+
+		@include f.breakpoint(tablet) {
+			right: 1px;
+		}
+	}
+	
+	&__rink__next--archive::after{
+		content: "";
+		display: inline-block;
+		height: 15px;
+		width: 15px;
+		border-top: 1.5px solid f.$TextGray;
+		border-right: 1.5px solid f.$TextGray;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 10px;
+		right: 0;
+
+		@include f.breakpoint(tablet) {
+			right: -9px;
+		}
+	}
+
+	&__rink__next__text--archive{
+		@include f.breakpoint(tablet) {
+			display: none;
+		}
+	}
+
+
+	//数字
+	&__rink__num-container--archive{
+		display: none;
+
+		@include f.breakpoint(tablet) {
+			display: block;
+		}
+	}
+
+	&__rink__num--archive{
+		@include f.breakpoint(tablet) {
+			height: 20px;
+			width: 20px;
+			padding: 8px 13px;
+			border: solid 1.5px f.$TextGray;
+			cursor: pointer;
+		}
+	}
+
+	&__rink__num--archive:not(:last-of-type){
+		@include f.breakpoint(tablet) {
+			margin-right: 15px;
+		}
+	}
+}
+
+
+

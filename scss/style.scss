@@ -21,12 +21,15 @@
 @use "./object/component/btn__bar";
 @use "./object/component/bg--img";
 @use "./object/component/bg--white";
+@use "./object/component/bg--darkbrown";
 @use "./object/component/text--white";
+@use "./object/component/text--darkbrown";
 @use "./object/component/unit";
 @use "./object/component/unit__list";
 
 
 /*project-------------------------------------------*/
+//front-page
 //header
 @use "./object/project/header/header";
 @use "./object/project/header/header__btn";
@@ -50,4 +53,9 @@
 @use "./object/project/footer/footer__container";
 @use "./object/project/footer/footer__copyright";
 
-
+//archive
+//main
+@use "./object/project/main/main__top--archive";
+@use "./object/project/main/main__lead--archive";
+@use "./object/project/main/main__card--archive";
+@use "./object/project/main/main__pagenation--archive";

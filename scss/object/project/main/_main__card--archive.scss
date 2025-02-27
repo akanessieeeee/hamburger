@@ -1,0 +1,100 @@
+@use "../../../foundation/foundation" as f;
+
+.p-main__card{
+    //card
+    &--archive{
+        margin: 20.5px;
+    
+        @include f.breakpoint(tablet) {
+            display: flex;
+            margin-left: 43px;
+            margin-right: 35px;
+
+            @include f.breakpoint(pc) {
+                margin: 30px 6.4% 30px 6.4%;
+            }
+        }
+    }
+
+    &--archive:first-of-type{
+        margin-top: 37px;
+
+        @include f.breakpoint(pc) {
+            margin-top: 70px;
+        }
+    }
+
+
+    //content
+    &__content--archive{
+        padding:0 16px 43px 17px;
+
+        @include f.breakpoint(tablet) {
+            padding: 0 59px 40px 35px;
+
+            @include f.breakpoint(pc) {
+                padding: 0 7.7% 60px 4.7%;
+            }
+        }
+    }
+    
+    &__img--archive{
+        object-fit: cover;
+        object-position: 30% center;
+
+        @include f.breakpoint(tablet) {
+            height: auto;
+            width: 50%;
+        }
+    }
+
+    &__title--archive{
+        margin-top: 32.5px;
+        font-size: 20px;
+
+        @include f.breakpoint(tablet) {
+            margin-top: 31px;
+
+            @include f.breakpoint(pc) {
+                margin-top: 56px;
+            }
+        }
+    }
+
+    &__sabtitle--archive{
+        margin-top: 21px;
+
+        @include f.breakpoint(pc) {
+            margin-top: 44px;
+        }
+    }
+
+    &__text--archive{
+        margin-top: 7px;
+        font-weight: f.$Lbold;
+
+        @include f.breakpoint(pc) {
+            margin-top: 13px;
+        }
+    }
+
+    &__btn--archive{
+        display: block;
+        height: 42px;
+        width: 163px;
+        border-radius: 50px;
+        font-family: "M PLUS 1p";
+        color: f.$TextGray;
+        font-weight: f.$bold;
+        margin: 40px auto 0 auto;
+
+        @include f.breakpoint(tablet) {
+            margin-top: 45px;
+
+            @include f.breakpoint(pc) {
+                margin-top: 60px;
+            }
+        }
+    }
+}
+

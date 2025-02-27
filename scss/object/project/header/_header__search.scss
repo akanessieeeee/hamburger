@@ -22,6 +22,7 @@
         padding-left: 35px;
         background-image: url("../../../images/header_icon_serch.png");
         background-position: 5px center;
+        color: f.$TextGray;
 
         @include f.breakpoint(tablet) {
             width: 396px;

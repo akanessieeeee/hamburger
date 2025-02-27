@@ -1,0 +1,61 @@
+@use "../../../foundation/foundation" as f;
+
+.p-main__top--archive{
+    background-image: url(../../../../images/main_card_1.jpg);
+    background-size: 350%;
+    background-position: top 47% left 26%;
+
+    @include f.breakpoint(tablet) {
+        background-size: 150%;
+        background-position: center;
+
+        @include f.breakpoint(pc) {
+            height: 239px;
+            background-size: cover;
+        }
+    }
+}
+
+.p-main__top--archive::before{
+    content: "";
+    background-color: f.$ClearBlack;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.p-main__top__title--archive{
+    position: absolute;
+    top: 106px;
+    left: 37px;
+    font-size: 35px;
+
+    @include f.breakpoint(tablet) {
+        top: 107px;
+        left: 86px;
+        font-size: 50px;
+
+        @include f.breakpoint(pc) {
+            top: 83px;
+        }
+    }
+}
+
+.p-main__top__sabtitle--archive{
+    position: absolute;
+    top: 158px;
+    left: 37px;
+    font-size: 20px;
+
+    @include f.breakpoint(tablet) {
+        top: 135px;
+        left: 275px;
+        font-weight: f.$Lbold;
+
+        @include f.breakpoint(pc) {
+            top: 114px;
+        }
+    }
+}
